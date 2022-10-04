@@ -21,3 +21,7 @@
   - Example 1:
     Input: string=”abcdefghij google microsoft”
     Output: google
+
+- Most repeating number.
+  Return most repeating number in array [5, 5, 2, 2, 1] if equals found output the 1st one. and -1 if no frequent numbers.
+  link: https://www.geeksforgeeks.org/find-first-repeating-element-array-integers/
