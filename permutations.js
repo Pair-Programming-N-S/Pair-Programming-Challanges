@@ -12,14 +12,15 @@ function permutation(number) {
   for (let iOut = 0; iOut < numberArrayLength; iOut++) {
     for (let iIn = 0; iIn < numberArrayLength; iIn++) {
       numberArrayTemp = numberArray.slice();
-      if (iOut !== iIn) {
-        numberArrayTemp[iIn] = numberArray[iOut]; //
-        numberArrayTemp[iOut] = numberArray[iIn];
+      if (iOut !== iIn || true) {
+        let temp = numberArrayTemp[iIn]
+        numberArrayTemp[iIn] = numberArrayTemp[iOut]; //
+        numberArrayTemp[iOut] = temp;
         possibleNumber.push(parseInt(numberArrayTemp.join("")));
       }
     }
   }
-  console.log(possibleNumber);
+  console.log(possibleNumber.sort());
 
   //   const combinationsArray = [...new Set(
   //     possibleNumber.sort((a, b) => {
