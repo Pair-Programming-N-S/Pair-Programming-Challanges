@@ -58,6 +58,7 @@ class BinaryTree {
     return [...leftValues, ...rightValues, node.value];
   }
 
+  // Depth first
   // root -> left -> right
   traversePreOrder(node) {
     if (!node) return [];
